@@ -26,6 +26,10 @@ export const CardItem = ({ card, isDragging, provided }: Props) => {
     socket.emit(CardEvent.RENAME, card.id, name);
   };
 
+  const changeCardDescription = (value: string) => {
+    socket.emit(CardEvent.CHANGE_DESCRIPTION, card.id, value);
+  };
+
   return (
     <Container
       className="card-container"
@@ -44,7 +48,7 @@ export const CardItem = ({ card, isDragging, provided }: Props) => {
           fontSize="large"
           bold={true}
         />
-        <Text text={card.description} onChange={() => {}} />
+        <Text text={card.description} onChange={changeCardDescription} />
         <Footer>
           <DeleteButton onClick={() => {}} />
           <Splitter />
