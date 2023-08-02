@@ -30,10 +30,8 @@ export const Column = ({
   onCreateCard,
 }: Props) => {
   //Pattertn(Partial application)
-  const onCreateCardWithList = (name: string): void => {
-    console.log("in column", name);
+  const onCreateCardWithList = (name: string): void =>
     onCreateCard(listId, name);
-  };
 
   return (
     <Draggable draggableId={listId} index={index}>

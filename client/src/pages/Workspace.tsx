@@ -69,6 +69,11 @@ export const Workspace = () => {
     socket.emit(CardEvent.CREATE, listId, cardName);
   };
 
+  const createList = (name: string): void => {
+    console.log("createList in Workspace", name);
+    socket.emit(ListEvent.CREATE, name);
+  };
+
   return (
     <React.Fragment>
       <DragDropContext onDragEnd={onDragEnd}>
@@ -90,7 +95,7 @@ export const Workspace = () => {
                 />
               ))}
               {provided.placeholder}
-              <ColumnCreator onCreateList={() => {}} />
+              <ColumnCreator onCreateList={createList} />
             </Container>
           )}
         </Droppable>

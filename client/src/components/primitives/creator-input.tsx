@@ -14,7 +14,6 @@ const CreatorInput = ({ onSubmit }: Props) => {
 
   const onClick = () => {
     setName("");
-    console.log("name in creatorInput", name);
     onSubmit(name);
   };
 
