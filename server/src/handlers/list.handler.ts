@@ -39,7 +39,7 @@ export class ListHandler extends SocketHandler {
     const lists = this.db.getData();
     const newLists = lists.map((list) => {
       if (list.id === listId) {
-        list.rename(name);
+        list.name = name;
       }
       return list;
     });

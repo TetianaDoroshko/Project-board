@@ -1,5 +1,5 @@
 import type { DraggableProvided } from "@hello-pangea/dnd";
-import React from "react";
+import React, { useContext } from "react";
 
 import type { Card } from "../../common/types";
 import { CopyButton } from "../primitives/copy-button";
@@ -10,6 +10,8 @@ import { Title } from "../primitives/title";
 import { Container } from "./styled/container";
 import { Content } from "./styled/content";
 import { Footer } from "./styled/footer";
+import { SocketContext } from "../../context/socket";
+import { CardEvent } from "../../common/enums";
 
 type Props = {
   card: Card;
@@ -18,6 +20,12 @@ type Props = {
 };
 
 export const CardItem = ({ card, isDragging, provided }: Props) => {
+  const socket = useContext(SocketContext);
+
+  const changeCardName = (name: string) => {
+    socket.emit(CardEvent.RENAME, card.id, name);
+  };
+
   return (
     <Container
       className="card-container"
@@ -31,7 +39,7 @@ export const CardItem = ({ card, isDragging, provided }: Props) => {
     >
       <Content>
         <Title
-          onChange={() => {}}
+          onChange={changeCardName}
           title={card.name}
           fontSize="large"
           bold={true}

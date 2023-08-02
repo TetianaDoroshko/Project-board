@@ -37,7 +37,6 @@ export const Column = ({
   const socket = useContext(SocketContext);
 
   const createCard = (cardName: string): void => {
-    console.log("createCard in Workspace", listId, cardName);
     socket.emit(CardEvent.CREATE, listId, cardName);
   };
 
