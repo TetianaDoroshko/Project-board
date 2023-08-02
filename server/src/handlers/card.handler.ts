@@ -13,6 +13,7 @@ export class CardHandler extends SocketHandler {
       CardEvent.CHANGE_DESCRIPTION,
       this.changeDescriptionCard.bind(this)
     );
+    socket.on(CardEvent.COPY, this.copyCard.bind(this));
     socket.on(CardEvent.DELETE, this.deleteCard.bind(this));
   }
 
@@ -80,6 +81,18 @@ export class CardHandler extends SocketHandler {
     });
 
     this.db.setData(updatedLists);
+    this.updateLists();
+  }
+  // PATTERN:{Prototype}
+  private copyCard(cardId: string): void {
+    const lists = this.db.getData();
+    lists.forEach((list) => {
+      list.cards.forEach((card) => {
+        if (card.id === cardId) {
+          list.cards.push(card.clone());
+        }
+      });
+    });
     this.updateLists();
   }
 

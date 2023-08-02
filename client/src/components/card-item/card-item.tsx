@@ -34,6 +34,10 @@ export const CardItem = ({ card, isDragging, provided }: Props) => {
     socket.emit(CardEvent.DELETE, card.id);
   };
 
+  const copyCard = (): void => {
+    socket.emit(CardEvent.COPY, card.id);
+  };
+
   return (
     <Container
       className="card-container"
@@ -56,7 +60,7 @@ export const CardItem = ({ card, isDragging, provided }: Props) => {
         <Footer>
           <DeleteButton onClick={removeCard} />
           <Splitter />
-          <CopyButton onClick={() => {}} />
+          <CopyButton onClick={copyCard} />
         </Footer>
       </Content>
     </Container>

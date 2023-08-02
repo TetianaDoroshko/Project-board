@@ -15,6 +15,15 @@ class Card {
     this.createdAt = new Date();
     this.id = randomUUID();
   }
+
+  // PATTERN:{Prototype}
+  public clone(): Card {
+    const copyCard = new Card(this.name, this.description);
+    copyCard.id = randomUUID();
+    copyCard.name += " - copy";
+    copyCard.createdAt = new Date();
+    return copyCard;
+  }
 }
 
 export { Card };
