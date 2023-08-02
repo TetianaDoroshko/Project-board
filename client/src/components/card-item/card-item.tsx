@@ -22,12 +22,16 @@ type Props = {
 export const CardItem = ({ card, isDragging, provided }: Props) => {
   const socket = useContext(SocketContext);
 
-  const changeCardName = (name: string) => {
+  const changeCardName = (name: string): void => {
     socket.emit(CardEvent.RENAME, card.id, name);
   };
 
-  const changeCardDescription = (value: string) => {
+  const changeCardDescription = (value: string): void => {
     socket.emit(CardEvent.CHANGE_DESCRIPTION, card.id, value);
+  };
+
+  const removeCard = (): void => {
+    socket.emit(CardEvent.DELETE, card.id);
   };
 
   return (
@@ -50,7 +54,7 @@ export const CardItem = ({ card, isDragging, provided }: Props) => {
         />
         <Text text={card.description} onChange={changeCardDescription} />
         <Footer>
-          <DeleteButton onClick={() => {}} />
+          <DeleteButton onClick={removeCard} />
           <Splitter />
           <CopyButton onClick={() => {}} />
         </Footer>

@@ -13,6 +13,7 @@ export class CardHandler extends SocketHandler {
       CardEvent.CHANGE_DESCRIPTION,
       this.changeDescriptionCard.bind(this)
     );
+    socket.on(CardEvent.DELETE, this.deleteCard.bind(this));
   }
 
   public createCard(listId: string, cardName: string): void {
@@ -78,6 +79,16 @@ export class CardHandler extends SocketHandler {
       return list;
     });
 
+    this.db.setData(updatedLists);
+    this.updateLists();
+  }
+
+  private deleteCard(cardId: string): void {
+    const lists = this.db.getData();
+    const updatedLists = lists.map((list) => {
+      list.cards = list.cards.filter((card) => card.id !== cardId);
+      return list;
+    });
     this.db.setData(updatedLists);
     this.updateLists();
   }
