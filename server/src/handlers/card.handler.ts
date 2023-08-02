@@ -1,8 +1,8 @@
-import type { Socket } from 'socket.io';
+import type { Socket } from "socket.io";
 
-import { CardEvent } from '../common/enums';
-import { Card } from '../data/models/card';
-import { SocketHandler } from './socket.handler';
+import { CardEvent } from "../common/enums";
+import { Card } from "../data/models/card";
+import { SocketHandler } from "./socket.handler";
 
 export class CardHandler extends SocketHandler {
   public handleConnection(socket: Socket): void {
@@ -11,14 +11,18 @@ export class CardHandler extends SocketHandler {
   }
 
   public createCard(listId: string, cardName: string): void {
-    const newCard = new Card(cardName, '');
+    console.log(listId, cardName);
+    const newCard = new Card(cardName, "");
+    console.log(newCard);
     const lists = this.db.getData();
+    console.log("lists", lists);
 
     const updatedLists = lists.map((list) =>
-      list.id === listId ? list.setCards(list.cards.concat(newCard)) : list,
+      list.id === listId ? list.setCards(list.cards.concat(newCard)) : list
     );
 
     this.db.setData(updatedLists);
+    console.log("updatedList", updatedLists);
     this.updateLists();
   }
 

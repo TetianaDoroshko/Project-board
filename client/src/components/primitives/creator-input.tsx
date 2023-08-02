@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { AddIcon } from '../icons/add-icon';
-import { AddButton } from './add-button';
-import { Button } from './styled/button';
-import { Input } from './styled/input';
+import { AddIcon } from "../icons/add-icon";
+import { AddButton } from "./add-button";
+import { Button } from "./styled/button";
+import { Input } from "./styled/input";
 
 type Props = {
   onSubmit: (value: string) => void;
 };
 
 const CreatorInput = ({ onSubmit }: Props) => {
-  const [name, setName] = useState('');
+  const [name, setName] = useState("");
 
   const onClick = () => {
-    setName('');
+    setName("");
+    console.log("name in creatorInput", name);
     onSubmit(name);
   };
 
