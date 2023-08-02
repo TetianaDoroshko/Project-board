@@ -13,13 +13,17 @@ import { Title } from "../primitives/title";
 import { Footer } from "./components/footer";
 import { Container } from "./styled/container";
 import { Header } from "./styled/header";
+import { useContext } from "react";
+import { SocketContext } from "../../context/socket";
+import { CardEvent } from "../../common/enums";
 
 type Props = {
   listId: string;
   listName: string;
   cards: Card[];
   index: number;
-  onCreateCard: (listId: string, cardName: string) => void;
+  onListRemove: (listId: string) => void;
+  onListRename: (name: string) => void;
 };
 
 export const Column = ({
@@ -27,11 +31,15 @@ export const Column = ({
   listName,
   cards,
   index,
-  onCreateCard,
+  onListRemove,
+  onListRename,
 }: Props) => {
-  //Pattertn(Partial application)
-  const onCreateCardWithList = (name: string): void =>
-    onCreateCard(listId, name);
+  const socket = useContext(SocketContext);
+
+  const createCard = (cardName: string): void => {
+    console.log("createCard in Workspace", listId, cardName);
+    socket.emit(CardEvent.CREATE, listId, cardName);
+  };
 
   return (
     <Draggable draggableId={listId} index={index}>
@@ -49,13 +57,18 @@ export const Column = ({
             <Title
               aria-label={listName}
               title={listName}
-              onChange={() => {}}
+              onChange={onListRename}
               fontSize="large"
               width={200}
               bold
             />
             <Splitter />
-            <DeleteButton color="#FFF0" onClick={() => {}} />
+            <DeleteButton
+              color="#FFF0"
+              onClick={() => {
+                onListRemove(listId);
+              }}
+            />
           </Header>
           <CardsList
             listId={listId}
@@ -65,7 +78,7 @@ export const Column = ({
             }}
             cards={cards}
           />
-          <Footer onCreateCard={onCreateCardWithList} />
+          <Footer onCreateCard={createCard} />
         </Container>
       )}
     </Draggable>

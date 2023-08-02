@@ -1,6 +1,6 @@
-import { randomUUID } from 'crypto';
+import { randomUUID } from "crypto";
 
-import { Card } from './card';
+import { Card } from "./card";
 
 class List {
   public id: string;
@@ -12,6 +12,10 @@ class List {
   public constructor(name: string) {
     this.name = name;
     this.id = randomUUID();
+  }
+
+  rename(name: string) {
+    this.name = name;
   }
 
   setCards(cards: Card[]) {

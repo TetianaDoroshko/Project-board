@@ -64,15 +64,19 @@ export const Workspace = () => {
     });
   };
 
-  const createCard = (listId: string, cardName: string): void => {
-    console.log("createCard in Workspace", listId, cardName);
-    socket.emit(CardEvent.CREATE, listId, cardName);
-  };
-
   const createList = (name: string): void => {
-    console.log("createList in Workspace", name);
     socket.emit(ListEvent.CREATE, name);
   };
+
+  const removeList = (listId: string): void => {
+    socket.emit(ListEvent.DELETE, listId);
+  };
+
+  const renameList =
+    (listId: string): ((name: string) => void) =>
+    (name: string): void => {
+      socket.emit(ListEvent.RENAME, listId, name);
+    };
 
   return (
     <React.Fragment>
@@ -91,7 +95,8 @@ export const Workspace = () => {
                   listName={list.name}
                   cards={list.cards}
                   listId={list.id}
-                  onCreateCard={createCard}
+                  onListRemove={removeList}
+                  onListRename={renameList(list.id)}
                 />
               ))}
               {provided.placeholder}
