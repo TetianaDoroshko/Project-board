@@ -22,20 +22,11 @@ type Props = {
 export const CardItem = ({ card, isDragging, provided }: Props) => {
   const socket = useContext(SocketContext);
 
-  const changeCardName = (name: string): void => {
-    socket.emit(CardEvent.RENAME, card.id, name);
-  };
-
-  const changeCardDescription = (value: string): void => {
-    socket.emit(CardEvent.CHANGE_DESCRIPTION, card.id, value);
-  };
-
-  const removeCard = (): void => {
-    socket.emit(CardEvent.DELETE, card.id);
-  };
-
-  const copyCard = (): void => {
-    socket.emit(CardEvent.COPY, card.id);
+  // PATTERN:{currying}
+  const operateCard = (cardEvent: CardEvent) => (value?: any) => {
+    typeof value === "string"
+      ? socket.emit(cardEvent, card.id, value)
+      : socket.emit(cardEvent, card.id);
   };
 
   return (
@@ -51,16 +42,19 @@ export const CardItem = ({ card, isDragging, provided }: Props) => {
     >
       <Content>
         <Title
-          onChange={changeCardName}
+          onChange={operateCard(CardEvent.RENAME)}
           title={card.name}
           fontSize="large"
           bold={true}
         />
-        <Text text={card.description} onChange={changeCardDescription} />
+        <Text
+          text={card.description}
+          onChange={operateCard(CardEvent.CHANGE_DESCRIPTION)}
+        />
         <Footer>
-          <DeleteButton onClick={removeCard} />
+          <DeleteButton onClick={operateCard(CardEvent.DELETE)} />
           <Splitter />
-          <CopyButton onClick={copyCard} />
+          <CopyButton onClick={operateCard(CardEvent.COPY)} />
         </Footer>
       </Content>
     </Container>

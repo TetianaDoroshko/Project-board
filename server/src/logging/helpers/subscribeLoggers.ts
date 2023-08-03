@@ -4,11 +4,10 @@ import { LoggerConsole } from "../LoggerConsole";
 import { LoggerFile } from "../LoggerFile";
 
 const eventManager = new EventManager();
+const loggerToFile = new LoggerFile();
+const loggerToConsole = new LoggerConsole();
 
 const subscribeLoggers = (): void => {
-  const loggerToFile = new LoggerFile();
-  const loggerToConsole = new LoggerConsole();
-
   eventManager.subscribe(
     [LogEvent.INFO, LogEvent.WARNING, LogEvent.ERROR],
     loggerToFile
@@ -16,4 +15,4 @@ const subscribeLoggers = (): void => {
   eventManager.subscribe([LogEvent.ERROR], loggerToConsole);
 };
 
-export { eventManager, subscribeLoggers };
+export { eventManager, subscribeLoggers, loggerToFile, loggerToConsole };

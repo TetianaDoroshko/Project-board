@@ -9,6 +9,7 @@ import {
   eventManager,
   subscribeLoggers,
 } from "./logging/helpers/subscribeLoggers";
+import { ProxyReorderService } from "./services/reorder.service.proxy";
 
 const PORT = 3001;
 
@@ -22,6 +23,8 @@ const io = new Server(httpServer, {
 
 const db = Database.Instance;
 const reorderService = new ReorderService();
+// PATTERN:{Proxy}
+const proxyReorderService = new ProxyReorderService(reorderService);
 
 if (process.env.NODE_ENV !== "production") {
   db.setData(lists);
@@ -31,14 +34,14 @@ const onConnection = (socket: Socket): void => {
   new ListHandler(
     io,
     db,
-    reorderService,
+    proxyReorderService,
     socket,
     eventManager
   ).handleConnection(socket);
   new CardHandler(
     io,
     db,
-    reorderService,
+    proxyReorderService,
     socket,
     eventManager
   ).handleConnection(socket);

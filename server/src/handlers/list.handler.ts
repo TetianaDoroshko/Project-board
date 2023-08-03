@@ -26,6 +26,7 @@ export class ListHandler extends SocketHandler {
     );
     this.db.setData(reorderedLists);
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: ListEvent.REORDER,
@@ -38,6 +39,7 @@ export class ListHandler extends SocketHandler {
     const newList = new List(name);
     this.db.setData(lists.concat(newList));
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: ListEvent.CREATE,
@@ -55,6 +57,7 @@ export class ListHandler extends SocketHandler {
     });
     this.db.setData(newLists);
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: ListEvent.RENAME,
@@ -66,6 +69,7 @@ export class ListHandler extends SocketHandler {
     const lists = this.db.getData();
     this.db.setData(lists.filter((list) => list.id !== listId));
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: ListEvent.DELETE,

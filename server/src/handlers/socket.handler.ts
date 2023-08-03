@@ -4,10 +4,11 @@ import { ListEvent } from "../common/enums";
 import { Database } from "../data/database";
 import { ReorderService } from "../services/reorder.service";
 import { EventManager } from "../logging/EventManager";
+import { IReorderService } from "../common/types/reorder.service.interface";
 
 abstract class SocketHandler {
   protected db: Database;
-  protected reorderService: ReorderService;
+  protected reorderService: IReorderService;
   protected io: Server;
   protected socket: Socket;
   protected events: EventManager;
@@ -15,7 +16,7 @@ abstract class SocketHandler {
   public constructor(
     io: Server,
     db: Database,
-    reorderService: ReorderService,
+    reorderService: IReorderService,
     socket: Socket,
     eventManager: EventManager
   ) {

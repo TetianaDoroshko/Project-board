@@ -27,6 +27,7 @@ export class CardHandler extends SocketHandler {
 
     this.db.setData(updatedLists);
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: CardEvent.CREATE,
@@ -55,6 +56,7 @@ export class CardHandler extends SocketHandler {
     });
     this.db.setData(reordered);
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: CardEvent.REORDER,
@@ -76,6 +78,7 @@ export class CardHandler extends SocketHandler {
 
     this.db.setData(updatedLists);
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: CardEvent.RENAME,
@@ -97,6 +100,7 @@ export class CardHandler extends SocketHandler {
 
     this.db.setData(updatedLists);
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: CardEvent.CHANGE_DESCRIPTION,
@@ -114,6 +118,7 @@ export class CardHandler extends SocketHandler {
       });
     });
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: CardEvent.COPY,
@@ -129,6 +134,7 @@ export class CardHandler extends SocketHandler {
     });
     this.db.setData(updatedLists);
     this.updateLists();
+    // PATTERN:{Observer}
     this.events.notify(LogEvent.INFO, {
       client: this.socket.id,
       action: CardEvent.DELETE,

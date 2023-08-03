@@ -15,29 +15,23 @@ import { Container } from "./styled/container";
 import { Header } from "./styled/header";
 import { useContext } from "react";
 import { SocketContext } from "../../context/socket";
-import { CardEvent } from "../../common/enums";
+import { CardEvent, ListEvent } from "../../common/enums";
 
 type Props = {
   listId: string;
   listName: string;
   cards: Card[];
   index: number;
-  onListRemove: (listId: string) => void;
-  onListRename: (name: string) => void;
 };
 
-export const Column = ({
-  listId,
-  listName,
-  cards,
-  index,
-  onListRemove,
-  onListRename,
-}: Props) => {
+export const Column = ({ listId, listName, cards, index }: Props) => {
   const socket = useContext(SocketContext);
 
-  const createCard = (cardName: string): void => {
-    socket.emit(CardEvent.CREATE, listId, cardName);
+  // PATTERN:{currying}
+  const operate = (event: CardEvent | ListEvent) => (value?: string) => {
+    typeof value === "string"
+      ? socket.emit(event, listId, value)
+      : socket.emit(event, listId);
   };
 
   return (
@@ -56,18 +50,13 @@ export const Column = ({
             <Title
               aria-label={listName}
               title={listName}
-              onChange={onListRename}
+              onChange={operate(ListEvent.RENAME)}
               fontSize="large"
               width={200}
               bold
             />
             <Splitter />
-            <DeleteButton
-              color="#FFF0"
-              onClick={() => {
-                onListRemove(listId);
-              }}
-            />
+            <DeleteButton color="#FFF0" onClick={operate(ListEvent.DELETE)} />
           </Header>
           <CardsList
             listId={listId}
@@ -77,7 +66,7 @@ export const Column = ({
             }}
             cards={cards}
           />
-          <Footer onCreateCard={createCard} />
+          <Footer onCreateCard={operate(CardEvent.CREATE)} />
         </Container>
       )}
     </Draggable>
