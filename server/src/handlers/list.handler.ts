@@ -1,6 +1,6 @@
 import type { Socket } from "socket.io";
 
-import { ListEvent } from "../common/enums";
+import { ListEvent, LogEvent } from "../common/enums";
 import { List } from "../data/models/list";
 import { SocketHandler } from "./socket.handler";
 
@@ -26,6 +26,11 @@ export class ListHandler extends SocketHandler {
     );
     this.db.setData(reorderedLists);
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: ListEvent.REORDER,
+      entity: "",
+    });
   }
 
   private createList(name: string): void {
@@ -33,6 +38,11 @@ export class ListHandler extends SocketHandler {
     const newList = new List(name);
     this.db.setData(lists.concat(newList));
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: ListEvent.CREATE,
+      entity: newList.id,
+    });
   }
 
   private renameList(listId: string, name: string): void {
@@ -45,11 +55,21 @@ export class ListHandler extends SocketHandler {
     });
     this.db.setData(newLists);
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: ListEvent.RENAME,
+      entity: listId,
+    });
   }
 
   private deleteList(listId: string): void {
     const lists = this.db.getData();
     this.db.setData(lists.filter((list) => list.id !== listId));
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: ListEvent.DELETE,
+      entity: listId,
+    });
   }
 }

@@ -1,0 +1,137 @@
+11:49:18 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - connected   
+11:49:23 03.08.2023 - client 9yOoQdAv8xwrzBmaAAAD - connected   
+11:49:28 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - create card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:49:44 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - rename card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:49:44 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - rename card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:50:01 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - change description card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:50:01 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - change description card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:50:01 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - change description card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:50:02 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - change description card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:50:02 03.08.2023 - client aMr5INAaBcPjqC7QAAAB - change description card cd825122-7bd7-4e21-b95e-011088a5c7bc  
+11:57:46 03.08.2023 - client 0Jdeec7F7DT3PTuYAAAC - connected   
+11:57:46 03.08.2023 - client zhOayJ6pCmkBHWRAAAAD - connected   
+12:10:13 03.08.2023 - client I4Q7C21qJUaAM7mgAAAC - connected   
+12:10:13 03.08.2023 - client u_rPm4OfT6MCbcQFAAAD - connected   
+12:10:29 03.08.2023 - client lvkflCvQZb7XK-cuAAAF - connected   
+12:10:36 03.08.2023 - client lvkflCvQZb7XK-cuAAAF - create card ad6c5143-d4ab-407e-92ef-38f722eb0e58  
+12:11:13 03.08.2023 - client twN6AmWHk0fbWCXkAAAB - connected   
+12:13:12 03.08.2023 - client Nkg2XwhLQBFR_lJkAAAC - connected   
+12:13:12 03.08.2023 - client -g9KBlyPvmWMcWqbAAAD - connected   
+12:13:21 03.08.2023 - client Nkg2XwhLQBFR_lJkAAAC - create card 001ccc58-8aff-4e43-90b6-c3580802dcc6  
+12:14:02 03.08.2023 - client ogwwO6PlBldkJBAwAAAC - connected   
+12:14:02 03.08.2023 - client zYoUl9Y5XAm_wYAjAAAD - connected   
+12:14:03 03.08.2023 - client qW517oE90y003quMAAAF - connected   
+12:14:09 03.08.2023 - client qW517oE90y003quMAAAF - create card 38e68a29-6c90-4c2d-9488-a1566aa1be9e  
+12:14:56 03.08.2023 - client bq7LI3J0tuqmzkRXAAAC - connected   
+12:14:56 03.08.2023 - client GJOrIj4mv1zxr0NAAAAD - connected   
+12:15:02 03.08.2023 - client 3puiRk-6UZGDW-CNAAAC - connected   
+12:15:02 03.08.2023 - client 0bExv_DNbi3gvGDCAAAD - connected   
+12:15:02 03.08.2023 - client ME19jEhEcwxAhJrvAAAF - connected   
+12:15:08 03.08.2023 - client ME19jEhEcwxAhJrvAAAF - create card 13c29a74-9aa2-4643-b541-b7e8318076bf  
+12:17:48 03.08.2023 - client fDCQkKhQNXltKZZ2AAAB - connected   
+12:17:51 03.08.2023 - client FJHLL70RdrJvl_CGAAAD - connected   
+12:17:52 03.08.2023 - client fDCQkKhQNXltKZZ2AAAB - create card 9667daf2-290b-4c20-b8e3-9cb0fd8ec629  
+12:18:17 03.08.2023 - client WfERbh7fgyz20O-JAAAC - connected   
+12:18:17 03.08.2023 - client zhaVUicAaor1SISxAAAD - connected   
+12:18:21 03.08.2023 - client WfERbh7fgyz20O-JAAAC - create card 1392e188-226d-4dad-8a03-c605e058ffbf  
+12:18:48 03.08.2023 - client YM3PIVRrHaxj9LNYAAAB - connected   
+12:18:48 03.08.2023 - client ZBVa87mptoqvLO_YAAAD - connected   
+12:18:51 03.08.2023 - client YM3PIVRrHaxj9LNYAAAB - create card d4bf19a2-0329-406c-9d01-e4a4f01710f9  
+12:22:08 03.08.2023 - client itiOg3b2E5kvZ2IHAAAC - connected   
+12:22:08 03.08.2023 - client 0bUm2sefktJtx3dPAAAD - connected   
+12:41:59 03.08.2023 - client wbHgznli3Uv_O3R0AAAB - connected   
+12:41:59 03.08.2023 - client Ld-UAo5POyFHyH_lAAAD - connected   
+12:42:00 03.08.2023 - client Nlr01v_RgsuktN3jAAAF - connected   
+12:42:04 03.08.2023 - client Nlr01v_RgsuktN3jAAAF - create card 8c7ec839-5dca-474b-898c-b4c23ac31b43  
+12:42:48 03.08.2023 - client DCuOH1OIovSKsMkdAAAC - connected   
+12:42:48 03.08.2023 - client m7ya27XaLnM82TIwAAAD - connected   
+12:42:49 03.08.2023 - client c4I6WBWx_RVi7-kRAAAF - connected   
+12:42:52 03.08.2023 - client c4I6WBWx_RVi7-kRAAAF - create card 28a2a5e6-8f23-443b-a25d-2cc60a9227a9  
+12:54:08 03.08.2023 - client pi28C_49hzylhBIzAAAB - connected   
+12:54:09 03.08.2023 - client -zGDR7Beu8rSNbVeAAAD - connected   
+12:54:12 03.08.2023 - client pi28C_49hzylhBIzAAAB - create card d8b20cba-992d-45c5-85bc-aefe59cdd453  
+12:58:40 03.08.2023 - client Ebr720BybHt4TZ8gAAAC - connected   
+12:58:40 03.08.2023 - client Iyi4ZeoWOij1MSB-AAAD - connected   
+12:58:40 03.08.2023 - client A8fk5mTDOUhW7uyAAAAF - connected   
+12:58:44 03.08.2023 - client A8fk5mTDOUhW7uyAAAAF - create card 6d246f96-4901-4c5b-ac72-8d2bf0e6ec10  
+12:59:16 03.08.2023 - client NN1iWkBszBWfFGmCAAAC - connected   
+12:59:16 03.08.2023 - client _DyLgkEhPQqBAHV0AAAD - connected   
+12:59:21 03.08.2023 - client _DyLgkEhPQqBAHV0AAAD - create card 41bcae7b-6a56-4537-b96f-0f32e6569eb4  
+13:01:28 03.08.2023 - client 6_ss-WaRNWoMnDqzAAAC - connected   
+13:01:28 03.08.2023 - client 8ZsDGef-TA6vyrxiAAAD - connected   
+13:01:33 03.08.2023 - client 6_ss-WaRNWoMnDqzAAAC - create card c8c6777b-013b-4224-9a87-df9205013715  
+13:02:56 03.08.2023 - client 44D08GG5u5Gtwtt3AAAC - connected   
+13:02:56 03.08.2023 - client b6mMd9RMUprTiExkAAAD - connected   
+13:03:00 03.08.2023 - client uUX-dLCpgS4abddlAAAF - connected   
+13:03:04 03.08.2023 - client uUX-dLCpgS4abddlAAAF - create card 125b1075-7e7b-4d94-a46e-f5cda787e251  
+13:04:22 03.08.2023 - client enNOcaGJcaMwolj5AAAB - connected   
+13:04:22 03.08.2023 - client l3ym5FQw4fAINxSAAAAD - connected   
+13:04:25 03.08.2023 - client enNOcaGJcaMwolj5AAAB - create card 0ff4b4d9-e4c0-4925-8f0e-9b94c1b9a335  
+13:04:42 03.08.2023 - client OsB8ekM3tvmMb7cRAAAC - connected   
+13:04:42 03.08.2023 - client 9jDwO0rIgtYoEnvCAAAD - connected   
+13:04:47 03.08.2023 - client OsB8ekM3tvmMb7cRAAAC - create card 530857ee-fecb-4da4-9213-fdfb953e19cb  
+13:05:03 03.08.2023 - client y1FHkmBTGmikVSyPAAAC - connected   
+13:05:04 03.08.2023 - client 8Y0Wr7EvfTWICb9WAAAD - connected   
+13:05:06 03.08.2023 - client y1FHkmBTGmikVSyPAAAC - create card 2dcedbdf-2b85-4d4e-8ce2-5f513203177e  
+13:07:00 03.08.2023 - client d8mH4n9yMFela6sjAAAC - connected   
+13:07:00 03.08.2023 - client gt1jFLU4Kh9cZ_ZkAAAD - connected   
+13:07:11 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - connected   
+13:07:17 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - create card a79b9b35-c6d7-4208-8e7d-4a1ed73cec0f  
+13:07:21 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card a79b9b35-c6d7-4208-8e7d-4a1ed73cec0f  
+13:07:21 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card a79b9b35-c6d7-4208-8e7d-4a1ed73cec0f  
+13:07:21 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card a79b9b35-c6d7-4208-8e7d-4a1ed73cec0f  
+13:07:22 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card a79b9b35-c6d7-4208-8e7d-4a1ed73cec0f  
+13:07:47 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - copy card a79b9b35-c6d7-4208-8e7d-4a1ed73cec0f  
+13:07:53 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - change description card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:53 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - change description card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:53 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - change description card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:54 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - change description card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:54 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - change description card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:54 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - change description card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:54 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - change description card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:58 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:58 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:58 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:58 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:58 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:58 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:07:59 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - rename card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:08:05 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - delete card 7bd96c5e-6da7-4b6b-8194-99f46505991f  
+13:08:10 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - reorder card   
+13:08:15 03.08.2023 - client Avnh4mlxzCiK-KUPAAAF - reorder card   
+13:08:27 03.08.2023 - client gt1jFLU4Kh9cZ_ZkAAAD - rename card a79b9b35-c6d7-4208-8e7d-4a1ed73cec0f  
+13:10:44 03.08.2023 - client imTH_lyFy_AJykIvAAAC - connected   
+13:10:44 03.08.2023 - client 49BjnCiyMx54GEvTAAAD - connected   
+13:12:09 03.08.2023 - client 2U1qkjLvMynNLQSCAAAC - connected   
+13:12:09 03.08.2023 - client agLSRNiMNzoQa8CMAAAD - connected   
+13:15:57 03.08.2023 - client uCoTvlBDIIF34kfPAAAC - connected   
+13:15:57 03.08.2023 - client MaIpZ_fKkNcY4qg1AAAD - connected   
+13:18:23 03.08.2023 - client Bi8cZC2B7UnLVWlpAAAC - connected   
+13:18:23 03.08.2023 - client F_9__P_GPbjf9kPzAAAD - connected   
+13:19:36 03.08.2023 - client Viz47pZCtSiYEDyuAAAC - connected   
+13:19:36 03.08.2023 - client BeqQ5sZYSTZ-nCuyAAAD - connected   
+13:22:01 03.08.2023 - client 8LWawthV8J8apqg6AAAC - connected   
+13:22:01 03.08.2023 - client Hhf5ztxavjE_rOEKAAAD - connected   
+13:23:30 03.08.2023 - client RmC9XBTftTfsFGJ5AAAC - connected   
+13:23:30 03.08.2023 - client AGZrSyjRswUR4jQnAAAD - connected   
+13:24:13 03.08.2023 - client ELPZOy2vyv55VsV-AAAC - connected   
+13:24:13 03.08.2023 - client oN_otrCtabdKOZfTAAAD - connected   
+13:35:58 03.08.2023 - client igZqHvIwLVe96haeAAAC - connected   
+13:35:58 03.08.2023 - client YbePgwb5OEpcJH-SAAAD - connected   
+13:42:03 03.08.2023 - client Su3oa7yrmW0EAwrQAAAC - connected   
+13:42:03 03.08.2023 - client 4P3tEOkqdbFv6kzEAAAD - connected   
+13:42:18 03.08.2023 - client Iw4NJnvH6cg3paUcAAAF - connected   
+13:42:24 03.08.2023 - client Iw4NJnvH6cg3paUcAAAF - create card 6d3917b4-6d02-48e6-a8d0-3bd6b92c37d7  
+13:42:29 03.08.2023 - client Iw4NJnvH6cg3paUcAAAF - rename card 6d3917b4-6d02-48e6-a8d0-3bd6b92c37d7  
+13:42:33 03.08.2023 - client Iw4NJnvH6cg3paUcAAAF - copy card 6d3917b4-6d02-48e6-a8d0-3bd6b92c37d7  
+13:44:05 03.08.2023 - client 2pwdLAeqsNlnYtgqAAAC - connected   
+13:44:05 03.08.2023 - client rRQv3fdKxDF02bUaAAAD - connected   
+13:44:28 03.08.2023 - client Ups6PwfX-Yu2JAlrAAAC - connected   
+13:44:28 03.08.2023 - client Q2aZqhOal___tNEIAAAD - connected   
+13:50:34 03.08.2023 - client bzwhg8ZIpAzGbwtDAAAC - connected   
+13:50:34 03.08.2023 - client J9SN25lPVdhhOzIIAAAD - connected   
+14:01:21 03.08.2023 - client cF9z4JfdtO-wlQmzAAAB - card:create 688a5138-0bca-43cc-a9ad-c6307e3d6346  
+14:01:28 03.08.2023 - client cF9z4JfdtO-wlQmzAAAB - card:rename 688a5138-0bca-43cc-a9ad-c6307e3d6346  
+14:02:46 03.08.2023 - client cF9z4JfdtO-wlQmzAAAB - list:create 7174f9a3-3126-43a5-b3c2-63d06ca1593a  
+14:02:58 03.08.2023 - client cF9z4JfdtO-wlQmzAAAB - card:create f175eb3f-d3df-49d1-88a4-38ce28d6610e  
+14:03:06 03.08.2023 - client cF9z4JfdtO-wlQmzAAAB - list:delete 7174f9a3-3126-43a5-b3c2-63d06ca1593a  

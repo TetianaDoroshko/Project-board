@@ -1,6 +1,6 @@
 import type { Socket } from "socket.io";
 
-import { CardEvent } from "../common/enums";
+import { CardEvent, LogEvent, LogFile } from "../common/enums";
 import { Card } from "../data/models/card";
 import { SocketHandler } from "./socket.handler";
 
@@ -27,6 +27,11 @@ export class CardHandler extends SocketHandler {
 
     this.db.setData(updatedLists);
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: CardEvent.CREATE,
+      entity: newCard.id,
+    });
   }
 
   private reorderCards({
@@ -50,6 +55,11 @@ export class CardHandler extends SocketHandler {
     });
     this.db.setData(reordered);
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: CardEvent.REORDER,
+      entity: "",
+    });
   }
 
   private renameCard(cardId: string, cardName: string): void {
@@ -66,6 +76,11 @@ export class CardHandler extends SocketHandler {
 
     this.db.setData(updatedLists);
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: CardEvent.RENAME,
+      entity: cardId,
+    });
   }
 
   private changeDescriptionCard(cardId: string, text: string): void {
@@ -82,6 +97,11 @@ export class CardHandler extends SocketHandler {
 
     this.db.setData(updatedLists);
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: CardEvent.CHANGE_DESCRIPTION,
+      entity: cardId,
+    });
   }
   // PATTERN:{Prototype}
   private copyCard(cardId: string): void {
@@ -94,6 +114,11 @@ export class CardHandler extends SocketHandler {
       });
     });
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: CardEvent.COPY,
+      entity: cardId,
+    });
   }
 
   private deleteCard(cardId: string): void {
@@ -104,5 +129,10 @@ export class CardHandler extends SocketHandler {
     });
     this.db.setData(updatedLists);
     this.updateLists();
+    this.events.notify(LogEvent.INFO, {
+      client: this.socket.id,
+      action: CardEvent.DELETE,
+      entity: cardId,
+    });
   }
 }
